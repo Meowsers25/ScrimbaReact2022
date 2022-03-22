@@ -8,6 +8,7 @@ function MainContent(){
                 <li>It's been a long time coming</li>
                 <li>New Year, new challenge</li>
                 <li>I love JavaScript</li>
+                <li>Yay!</li>
             </ol>
         </div>
     )
