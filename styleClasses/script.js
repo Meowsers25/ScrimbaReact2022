@@ -15,8 +15,6 @@ function Header(){
     )
 }
 
-
-
 function Content(){
     return(
         <div className="main-body">
