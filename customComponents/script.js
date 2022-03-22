@@ -49,23 +49,48 @@ Part 2:
 
  */
 
-function WhyReact(){
+// parent/child mini challenge:
+// put header in own component
+// then can create an instance inside Page component
+// do the same for the footer and content
+
+function Header(){
     return(
-        <div>
             <header>
                 <nav>
                     <img src="./react.png" width="60px" alt="React logo" />
                 </nav>
-            </header>
+            </header> 
+    )
+}
+
+function Content(){
+    return(
+        <div>
             <h1>Why I'm excited about React:</h1>
             <ol>
                 <li>It's been a long time coming</li>
                 <li>New Year, new challenge</li>
                 <li>I love JavaScript</li>
             </ol>
-            <footer>
-                <small>© 2022 Lamothe development. All rights reserved.</small>
-            </footer>
+        </div>
+    )
+}
+
+function Footer(){
+    return(
+        <footer>
+            <small>© 2022 Lamothe development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function WhyReact(){
+    return(
+        <div>
+            <Header />
+            <Content />
+            <Footer />
         </div>
     )
 }
