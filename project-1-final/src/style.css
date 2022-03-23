@@ -2,9 +2,90 @@
 
 *{
     box-sizing: border-box;
-}
-
-body{
+    font-family: 'Inter';
     margin: 0;
 }
 
+.small-logo{
+    height: 40px;
+    margin-left: 27px;
+}
+.facts{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.2535px;
+    line-height: 27px;
+    letter-spacing: .01em;
+    color: #61DAFB;
+    margin-left: 8px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    height: 92px;
+    background-color: #21222A;
+
+}
+.course{
+    margin-left: auto;
+    margin-right: 27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .01em;
+    line-height: 19px;
+    text-align: right;
+    color: #DEEBF8;
+
+}
+.main-body{
+    background-color: #282D35;
+    padding-top: 1px;
+    height: 100vh;
+}
+.fun{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.06px;
+    line-height: 47px;
+    letter-spacing: .01em;
+    color: #FFFFFF;
+    margin-top: 57px;
+    margin-left: 27px;
+}
+.container{
+    display: flex;
+    /* margin-top: px; */
+    
+}
+.largeLogo{
+    margin-left: auto;
+}
+.list{
+    list-style: none; /* Remove default bullets */
+    margin-top: 46px;
+    margin-left: 74px;
+}
+.list > li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}
+
+.list > li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #61DAFB; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 1.5em;
+  }
+  
+  

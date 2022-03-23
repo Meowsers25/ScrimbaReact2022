@@ -3,9 +3,10 @@ import React from 'react'
 import reactLogo from '../images/logo192.png'
 function Nav(){
     return(
-        <nav>
-            <img src={ reactLogo } alt="Small React Logo"/>
-            <h1 className="header">ReactFacts</h1>
+        <nav className="nav-bar">
+            <img className="small-logo" src={ reactLogo } alt="Small React Logo"/>
+            <h2 className="facts">ReactFacts</h2>
+            <h3 className="course">React Course - Project 1</h3>
         </nav>
     )
 }
