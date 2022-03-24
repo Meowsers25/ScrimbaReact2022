@@ -1,5 +1,5 @@
 import React from 'react'
-// /Users/christianlamothe/Desktop/treact/project-1-final/src/images/logo192.png
+// had to use the 2 .. for this to work
 import reactLogo from '../images/logo192.png'
 function Nav(){
     return(

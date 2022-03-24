@@ -1,4 +1,5 @@
 // import React from 'react'
+// same issue with 2 .. to import image
 import largeLogo from '../images/reactjs-icon 2.png'
 function MainContent(){
     return(
