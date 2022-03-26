@@ -1,9 +1,9 @@
 import React from 'react'
-import Me from "../images/me.jpg"
+import Me from "../images/me.png"
 
 function Info(){
     return(
-        <div className="container">
+        <div>
             <img className="img" src={ Me } alt="Me" />
             <h2 className="name">Christian Lamothe</h2>
             <h3 className="fd">Frontend Developer</h3>
