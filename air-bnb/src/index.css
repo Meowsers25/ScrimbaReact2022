@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: lightgray;
+}
+.back{
+  display: flex;
+  flex-direction: column;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  width: 550px;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.airbnb{
+  width: 82.02px;
+  height: 25.35px;
+}
+.hero{
+  background: #FFFFFF;
+  width: 550px;
+  margin-top: 1px;
+}
+.hero-group{
+  
+  width: 395.91px;
+  height: 232px;
+  margin-top: 26px;
+  margin-left: 77px;
+}
+.hero-h{
+  
+  width: 347px;
+  height: 40px;
+  margin-left: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  /* identical to box height, or 40px */
+  color: #000000;
+}
+.hero-p{
+  
+  
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  /* or 18px */
+  margin-left: 36px;
+
+
+  color: #222222;
+}
