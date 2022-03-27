@@ -6,12 +6,13 @@
 }
 body{
   margin: 0;
-  background: lightgray;
+  font-family: Poppins;
+  /* background: lightgray; */
 }
-.back{
+/* .back{
   display: flex;
   flex-direction: column;
-}
+} */
 .nav{
   display: flex;
   align-items: center;
@@ -20,14 +21,23 @@ body{
   background: #FFFFFF;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+.gray {
+  color: #918E9B;
+}
+.bold{
+  font-weight: bold;
+}
 .airbnb{
   width: 82.02px;
   height: 25.35px;
 }
 .hero{
-  background: #FFFFFF;
+  /* background: #FFFFFF;
   width: 550px;
-  margin-top: 1px;
+  margin-top: 1px; */
+  display: flex;
+  flex-direction: column;
+  /* background-color: #FFFFFF;; */
 }
 .hero-group{
   
@@ -41,26 +51,42 @@ body{
   width: 347px;
   height: 40px;
   margin-left: 36px;
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 110%;
   /* identical to box height, or 40px */
   color: #000000;
+  margin-bottom: 16px;
 }
 .hero-p{
   
   
 
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 110%;
   /* or 18px */
+  margin-top: 0px;
   margin-left: 36px;
 
 
   color: #222222;
+}
+.swim{
+  width: 175px;
+  font-size: 12px;
+}
+.swimmer{
+  width: 100%;
+}
+.card{
+  display: flex;
+  align-items: center;
+}
+.star{
+  height: 14px;
 }
