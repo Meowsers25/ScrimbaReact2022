@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Jokes from './Jokes'
 
 export default function App(){

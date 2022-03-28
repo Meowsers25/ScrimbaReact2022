@@ -1,20 +1,20 @@
-import React from 'react'
-import Swimmer from '../images/image 12.png'
-import Star from '../images/Star 1.png'
+// import React from 'react'
+// import Swimmer from '../images/image 12.png'
+// import Star from '../images/Star 1.png'
 
-export default function Card(){
+export default function Card(props){
     return(
         <section>
             <div className="swim">
-                <img className="swimmer" src={ Swimmer } alt="swimmer" />
+                <img className="swimmer" src={ props.img } alt="swimmer" />
                 <div className="card">
-                    <img src={ Star } alt="star" className="star" />
-                    <span>5.0</span>
-                    <span className="gray">(6) • </span>
-                    <span className="gray">USA</span>
+                    <img src="./images/Star 1.png" alt="star" className="star" />
+                    <span>{ props.rating }</span>
+                    <span className="gray">({ props.reviewCount }) • </span>
+                    <span className="gray">{ props.country }</span>
                 </div>
-                <p>Life lessons with Katie Zaferes</p>
-                <p><span className="bold">From $136</span> / person</p>
+                <p>{ props.title }</p>
+                <p><span className="bold">From ${ props.price }</span> / person</p>
             </div>
         </section>
     )
