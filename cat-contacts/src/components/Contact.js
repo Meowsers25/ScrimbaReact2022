@@ -44,6 +44,6 @@ export default function Contact({img, name, phone, email}){
                 <img src="images/Mail.png" alt="email"/>
                 <p>{ email }</p>
             </div>
-        </div>
+        </div> 
     )
 }
