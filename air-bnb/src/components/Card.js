@@ -1,12 +1,11 @@
-// import React from 'react'
-// import Swimmer from '../images/image 12.png'
-// import Star from '../images/Star 1.png'
+// Using props 
+// ** check out the img tag with the back tics `` - used to define path here
 
 export default function Card(props){
     return(
         <section>
             <div className="swim">
-                <img className="swimmer" src={ props.img } alt="swimmer" />
+                <img className="swimmer" src={`./images/${ props.img }`} alt="swimmer" />
                 <div className="card">
                     <img src="./images/Star 1.png" alt="star" className="star" />
                     <span>{ props.rating }</span>
