@@ -24,7 +24,7 @@
 // here i used props parameter names; could have just used 'props'
 export default function Card({img, rating, reviewCount, location, title, price}){
     return(
-        <section>
+        
             <div className="swim">
                 <img className="swimmer" src={img} alt="swimmer" />
                 <div className="card">
@@ -33,9 +33,9 @@ export default function Card({img, rating, reviewCount, location, title, price})
                     <span className="gray">({ reviewCount }) • </span>
                     <span className="gray">{ location }</span>
                 </div>
-                <p>{ title }</p>
-                <p><span className="bold">From ${ price }</span> / person</p>
+                <p className="card--title">{ title }</p>
+                <p className="card--price"><span className="bold">From ${ price }</span> / person</p>
             </div>
-        </section>
+        
     )
 }
