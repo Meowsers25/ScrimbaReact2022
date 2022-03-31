@@ -22,10 +22,17 @@
 
 // next lesson using .map() with the external data file (cardData.js)
 // here i used props parameter names; could have just used 'props'
-export default function Card({img, rating, reviewCount, location, title, price}){
+export default function Card({img, rating, reviewCount, location, title, price, openSpots}){
+    let badgeText
+    if(openSpots === 0){
+        badgeText = "SOLD OUT"
+    } else if(location === "Online"){
+        badgeText = "ONLINE"
+    } 
     return(
         
             <div className="swim">
+                {badgeText &&<div className="card--badge">{badgeText}</div>}
                 <img className="swimmer" src={img} alt="swimmer" />
                 <div className="card">
                     <img src="./images/Star 1.png" alt="star" className="star" />

@@ -32,7 +32,8 @@ export default function App(){
             reviewCount={card.stats.reviewCount} 
             location={card.location} 
             title={card.title} 
-            price={card.price} 
+            price={card.price}
+            openSpots={card.openSpots}
           />
     )
   })
