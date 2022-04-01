@@ -23,6 +23,8 @@
 // next lesson using .map() with the external data file (cardData.js)
 // here i used props parameter names; could have just used 'props'
 export default function Card({img, rating, reviewCount, location, title, price, openSpots}){
+    // console.log(props)
+    // console.log(props)
     let badgeText
     if(openSpots === 0){
         badgeText = "SOLD OUT"
@@ -46,3 +48,6 @@ export default function Card({img, rating, reviewCount, location, title, price, 
         
     )
 }
+
+// changed this to just (props)
+// export default function Card({img, rating, reviewCount, location, title, price, openSpots})

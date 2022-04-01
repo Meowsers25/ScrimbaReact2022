@@ -47,3 +47,15 @@ export default function App(){
     </div>
   )
 }
+
+// took this out of component to clean up.
+// putting the object (card) instead
+// Check out the changes in Card.js
+
+// img={card.coverImg} 
+//             rating={card.stats.rating} 
+//             reviewCount={card.stats.reviewCount} 
+//             location={card.location} 
+//             title={card.title} 
+//             price={card.price}
+//             openSpots={card.openSpots}
