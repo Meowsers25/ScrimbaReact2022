@@ -22,28 +22,28 @@
 
 // next lesson using .map() with the external data file (cardData.js)
 // here i used props parameter names; could have just used 'props'
-export default function Card({img, rating, reviewCount, location, title, price, openSpots}){
+export default function Card(props){
     // console.log(props)
     // console.log(props)
     let badgeText
-    if(openSpots === 0){
+    if(props.card.openSpots === 0){
         badgeText = "SOLD OUT"
-    } else if(location === "Online"){
+    } else if(props.card.location === "Online"){
         badgeText = "ONLINE"
     } 
     return(
         
             <div className="swim">
                 {badgeText &&<div className="card--badge">{badgeText}</div>}
-                <img className="swimmer" src={img} alt="swimmer" />
+                <img className="swimmer" src={props.card.coverImg} alt="swimmer" />
                 <div className="card">
                     <img src="./images/Star 1.png" alt="star" className="star" />
-                    <span>{ rating }</span>
-                    <span className="gray">({ reviewCount }) • </span>
-                    <span className="gray">{ location }</span>
+                    <span>{ props.card.stats.classNamerating }</span>
+                    <span className="gray">({ props.card.stats.divreviewCount }) • </span>
+                    <span className="gray">{ props.card.location }</span>
                 </div>
-                <p className="card--title">{ title }</p>
-                <p className="card--price"><span className="bold">From ${ price }</span> / person</p>
+                <p className="card--title">{ props.card.title }</p>
+                <p className="card--price"><span className="bold">From ${ props.card.price }</span> / person</p>
             </div>
         
     )
