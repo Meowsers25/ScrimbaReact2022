@@ -21,29 +21,29 @@
 
 
 // next lesson using .map() with the external data file (cardData.js)
-// here i used props parameter names; could have just used 'props'
+// here i used the spread operator
 export default function Card(props){
     // console.log(props)
     // console.log(props)
     let badgeText
-    if(props.card.openSpots === 0){
+    if(props.openSpots === 0){
         badgeText = "SOLD OUT"
-    } else if(props.card.location === "Online"){
+    } else if(props.location === "Online"){
         badgeText = "ONLINE"
     } 
     return(
         
             <div className="swim">
                 {badgeText &&<div className="card--badge">{badgeText}</div>}
-                <img className="swimmer" src={props.card.coverImg} alt="swimmer" />
+                <img className="swimmer" src={props.coverImg} alt="swimmer" />
                 <div className="card">
                     <img src="./images/Star 1.png" alt="star" className="star" />
-                    <span>{ props.card.stats.classNamerating }</span>
-                    <span className="gray">({ props.card.stats.divreviewCount }) • </span>
-                    <span className="gray">{ props.card.location }</span>
+                    <span>{props.stats.classNamerating }</span>
+                    <span className="gray">({props.stats.divreviewCount }) • </span>
+                    <span className="gray">{props.location }</span>
                 </div>
-                <p className="card--title">{ props.card.title }</p>
-                <p className="card--price"><span className="bold">From ${ props.card.price }</span> / person</p>
+                <p className="card--title">{ props.title }</p>
+                <p className="card--price"><span className="bold">From ${ props.price }</span> / person</p>
             </div>
         
     )
@@ -51,3 +51,31 @@ export default function Card(props){
 
 // changed this to just (props)
 // export default function Card({img, rating, reviewCount, location, title, price, openSpots})
+
+// here i used props parameter names; could have just used 'props'
+// export default function Card(props){
+//     // console.log(props)
+//     // console.log(props)
+//     let badgeText
+//     if(props.card.openSpots === 0){
+//         badgeText = "SOLD OUT"
+//     } else if(props.card.location === "Online"){
+//         badgeText = "ONLINE"
+//     } 
+//     return(
+        
+//             <div className="swim">
+//                 {badgeText &&<div className="card--badge">{badgeText}</div>}
+//                 <img className="swimmer" src={props.card.coverImg} alt="swimmer" />
+//                 <div className="card">
+//                     <img src="./images/Star 1.png" alt="star" className="star" />
+//                     <span>{ props.card.stats.classNamerating }</span>
+//                     <span className="gray">({ props.card.stats.divreviewCount }) • </span>
+//                     <span className="gray">{ props.card.location }</span>
+//                 </div>
+//                 <p className="card--title">{ props.card.title }</p>
+//                 <p className="card--price"><span className="bold">From ${ props.card.price }</span> / person</p>
+//             </div>
+        
+//     )
+// }

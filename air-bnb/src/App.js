@@ -27,7 +27,10 @@ export default function App(){
     return (
           <Card 
             key={card.id}
-            card={card}
+            // pass object as prop
+            // card={card}
+            // spread operator
+            {...card}
           />
     )
   })
