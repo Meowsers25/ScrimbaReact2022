@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
@@ -8,11 +8,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: lightgray;
 }
 .page{
   height: 704px;
   width: 550px;
-  border: 1px solid black;
+  background: #ffffff;
+  /* border: 1px solid lightgray; */
+  border-radius: 8px;
 }
 .header{
   display: flex;
@@ -21,22 +24,55 @@ body {
   height: 55px;
   width: 550px;
   background-color: #F55A5A;
+  border-radius: 8px 8px 0 0;
 }
 .heading{
   color: white;
   font-weight: lighter;
 }
+.earth{
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
 .country-pic{
   height: 171px;
   width: 125px;
+  border-radius: 5px;
 }
 .travel-list{
   
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
   
 }
 .travel-entry{
   display: flex;
+  margin: 15px;
+  /* padding-top: 15px; */
+}
+.travel-info{
+  margin-left: 10px;
+}
+.country-span{
+  margin-left: 5px;
+  font-size: 12px;
+}
+.end-date{
+  margin-left: 25px;
+}
+.title{
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.dates{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.goog{
+  margin-left: 25px;
+  font-size: 13px;
+  color: red;
 }
