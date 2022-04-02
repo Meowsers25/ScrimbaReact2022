@@ -30,3 +30,13 @@ body {
   height: 171px;
   width: 125px;
 }
+.travel-list{
+  
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  
+}
+.travel-entry{
+  display: flex;
+}
