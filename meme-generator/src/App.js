@@ -1,7 +1,10 @@
+import Header from './components/Header'
+
 function App() {
   return (
     <div>
-      <h1>MEME GENERATOR</h1>
+      <Header />
+      
     </div>
   );
 }
