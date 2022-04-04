@@ -50,6 +50,7 @@ body {
   width: 230px;
   border: 1px solid #D5D4D8;
   border-radius: 5px;
+  text-indent: 5px;
 }
 .btn{
   height: 40px;
@@ -60,6 +61,7 @@ body {
   border: none;
   color: white;
   font-family: Inter;
+  cursor: pointer;
 }
 .btn-img{
   height: 19px;
