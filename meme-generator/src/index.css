@@ -67,3 +67,12 @@ body {
   height: 19px;
   width: 166px;
 }
+.genPhoto{
+  max-width: 100%;
+  border-radius: 5px;
+}
+.align-img{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
