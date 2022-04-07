@@ -13,8 +13,30 @@ body {
   justify-content: center;
   align-items: center;
 }
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.counter {
+.state--title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.state--value {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+  cursor: pointer;
+}
+
+/* .counter {
   display: flex;
   align-items: flex-end;
 }
@@ -57,7 +79,7 @@ body {
 .counter--minus {
   margin-right: -20px;
   z-index: 1;
-}
+} */
 
 /* * {
   box-sizing: border-box;
