@@ -19,7 +19,7 @@ function App() {
       // document.getElementById()
       // console.log(thingsArray)
       setThingsArray(prevState => {
-        return [...prevState, `Thing ${prevState.length + 1}`]
+        return [...prevState, `Thing ${prevState.length + 1} !`]
       })
   }
   
