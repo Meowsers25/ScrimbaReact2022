@@ -1,5 +1,5 @@
 import React from 'react'
-
+// just a note for github
 export default function App() {
   const [contact, setContact] = React.useState({
       firstName: "John",
